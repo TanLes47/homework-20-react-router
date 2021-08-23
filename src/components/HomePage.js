@@ -1,6 +1,4 @@
-import styles from './HomePage.css';
-
-
+import './styles';
 
 const HomePage = () => {
     return <div className={styles.wrapper}>Welcome to Venice</div>
