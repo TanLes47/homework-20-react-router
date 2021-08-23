@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+.wrapper {
+	background-image: url('./assets/img/Venice-1.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	font-family: 'DM Serif Text', serif;
+	font-size: 5rem;
+	color: rgb(252, 245, 244);
+}
