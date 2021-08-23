@@ -6,11 +6,11 @@ import HomePage from './components/HomePage';
 
 function App() {
 	return (
-		<div className="App">
-        <Switch>
-          <Route exact path={'/'} component={HomePage} />
+			<div className="App">
+        		<Switch>
+          			<Route exact path='/' component={HomePage} />
 				</Switch>
-		  </div>
+		  	</div>
 	)
 }
 

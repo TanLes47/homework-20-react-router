@@ -1,8 +1,9 @@
-import '../components/style';
+import styles from './HomePage.css';
+
 
 
 const HomePage = () => {
-    return <h1>Welcome to Venice</h1>
+    return <div className={styles.wrapper}>Welcome to Venice</div>
 }
 
 export default HomePage;
