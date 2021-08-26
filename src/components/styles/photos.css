@@ -1,4 +1,4 @@
-.box {
+.photo-box {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -6,6 +6,7 @@
 }
 
 .img_Venice {
-    width: 23rem;
-    margin: 30px 10px;
+    width: 25rem;
+    height: 15rem;
+    margin: 15px 10px;
 }

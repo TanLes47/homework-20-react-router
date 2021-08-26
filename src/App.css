@@ -6,13 +6,13 @@ a {
 .link {
   display: inline-block;
   width: 100px;
-  border: 1px solid rgb(198, 223, 235);
+  border: 1px solid rgb(93, 195, 243);
   border-radius: 5px;
   color: rgb(80, 106, 255);
   text-decoration: none;
   text-align: center;
   padding: 5px;
-  margin: 10px;
+  margin: 25px;
 }
 
 nav > .link:hover {
@@ -26,5 +26,6 @@ a:hover {
 .header-1 {
   text-align: center;
   text-decoration: dashed;
- color: rgb(0, 17, 255);
+  color: rgb(0, 17, 255);
 }
+  

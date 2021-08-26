@@ -1,34 +1,28 @@
 import './App.css';
-import { Switch, Route, NavLink } from 'react-router-dom';
-import PostsPage from './components/PostsPage';
+import { Switch, Route, NavLink, } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import PostsPage from './components/AllPostsPage';
 import PhotosPage from './components/PhotosPage';
 import ContactsPage from './components/ContactsPage';
-//import './components/styles';
+import NotFound from './components/NotFound';
 
-const HomePage = () => {
-    return <div>
-			<h1 className="header-1">Welcome to Venice</h1>
-			<a href="" target="_blank" rel="noreferrer" className="title_link">
-				<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripzaza.com%2Fru%2Fdestinations%2Fluchshie-dostoprimechatelnosti-venetsii%2F&psig=AOvVaw05HQfmyPTAANemI004uyOQ&ust=1629812937496000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPiU3Lukx_ICFQAAAAAdAAAAABAq" alt="" className="img-page"></img>
-			</a>
-		</div>
-};
 
 
 function App() {
 	return (
 	  <div className="App">
-		<nav>
+		<nav className="header-1">
 		  	<NavLink exact to="/" activeClassName="selected" className="link">Home</NavLink>
-			<NavLink to="/" activeClassName="selected" className="link">Posts</NavLink>
-			<NavLink to="/" activeClassName="selected" className="link">Photos</NavLink>
-			<NavLink to="/" activeClassName="selected" className="link">Contacts</NavLink>
+			<NavLink to="/PostsPage" activeClassName="selected" className="link">Posts</NavLink>
+			<NavLink to="/PhotosPage" activeClassName="selected" className="link">Photos</NavLink>
+			<NavLink to="/ContactsPage" activeClassName="selected" className="link">Contacts</NavLink>
 		</nav>
 		<Switch>
 		  <Route exact path="/" component={HomePage} />
-		  <Route path="/publications" component={PostsPage} />
-          <Route path="/photos" component={PhotosPage} />
-          <Route path="/contacts" component={ContactsPage} />
+		  <Route path="/postsPage" component={PostsPage} />
+          <Route path="/photosPage" component={PhotosPage} />
+          <Route path="/contactsPage" component={ContactsPage} />
+		  <Route path="*" component={NotFound} />
 		</Switch>
 	  </div>
 	);
